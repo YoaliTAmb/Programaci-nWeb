@@ -1,0 +1,85 @@
+h1 {
+    color: white;
+     text-align: center;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     display: flex;
+    justify-content: center;
+}
+
+
+
+/* * {
+    border: solid;
+} */
+
+.header{
+    background-color: #60855E;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+}
+
+/**Animales*/
+.grid{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: auto;
+    
+}
+
+.footer{
+    display: flex;   
+    justify-content: flex-end;
+}
+
+h5{
+    display: flex;
+    justify-content: flex-start;
+}
+
+p,h2{
+    text-align: center;
+}
+
+p{
+    color: gray;
+    font-family: monospace;
+}
+
+h3{
+    text-align:unset;
+    font-family: Copperplate;
+    font-weight: bold;
+    color:  #85745E;
+}
+
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    color: #557989;
+    text-align: justify;
+   
+}
+
+
+img{
+    border-radius: 0.6cm;
+}
+
+.item{
+    width: 350px;
+    height: 600px;
+    border-left: 100px;
+}
+
+.menu{
+    font-family: cursive;
+    color: red;
+}
