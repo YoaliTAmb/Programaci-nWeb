@@ -1,0 +1,347 @@
+/** Para la cabecera Home */
+
+header{
+    display: grid;
+    background-color: #187E35;
+    color: #F4B301; 
+    overflow: hidden;
+}
+header, h1{
+    font-size:160%;
+}
+h1{
+  position:relative;  left: 1em;
+}
+.logo{
+    display: grid;   
+    position: absolute; top: 0.2em; right: 0;
+    width: 126px;
+}
+/** Para la cabecera FIN*/
+
+.ImagenPort figure{
+  padding: 6px;
+  border-radius: 1.2em;
+}
+
+/** Para la cabecera Team, menu, Gall*/
+.headerPers{
+    display: grid;
+    background-color: #187E35;
+    color: #F4B301;
+}
+.headerPers, h1{
+    font-size:160%;
+    font-style: aboreto;
+}
+.log{
+    display: flex;   
+    position: absolute; top: 0.55em; right: 0;
+    width: 126px;
+}
+
+/** Para la cabecera Team */
+
+
+.logoMid{
+    display: flex;   
+    justify-content: center;
+    position: relative; top: -4em;
+    
+}
+
+/**Menú en Team*/
+.back{
+  display: grid;
+  justify-content: space-evenly;
+  justify-content: center;
+  position: relative; top: 0em;
+  margin: 0;
+
+}
+.back ul li:hover{
+  color: #F4B301!important;
+
+}
+.menback ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+  justify-content: center;
+}
+.back li{
+  display:inline-block;
+}
+.back ul a {
+  
+  color:#187E35;
+  font-weight:400;
+  font-size:15px;
+  padding:10px;
+  font-family: monospace;
+  font-weight: bold;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.back ul a:hover {
+  color: #F4B301;
+  background-color: white;
+}
+
+/** Para abrir el menú de INICIO*/
+.menu{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-evenly;
+    align-items: end;
+    margin-right: 2em;
+    float: left;
+}
+.menu ul li {
+    background-color:#187E35;
+}
+.menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  .menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  .menu ul li {
+    position:relative;
+    
+    margin:0;
+    padding:0;
+  }
+  ul li:hover {
+    background:#F4B301;
+  }
+  /** Para abrir el menú FIN*/
+  .menus{
+    display: grid;
+    justify-content: space-evenly;
+    justify-content: center;
+    position: relative; top: 3em;
+    margin: 0;
+
+}
+.menus ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    justify-content: center;
+}
+.menus li{
+    display:inline-block;
+}
+.menus ul a {
+    
+    color:#187E35;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  .menus ul a:hover {
+    color: #F4B301;
+    background-color: white;
+  }
+
+  .nota { /* Definimos la clase .nota */
+    background-color: #F4B301;
+  }
+  
+/** Para platos */
+.Platos{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax( 110px, 110px));
+  gap: 10px;
+  padding: 1em;
+  justify-content: center; 
+}
+/** Para platos FIN */
+
+.sss{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 3px;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 20px;
+}
+.sss h4{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+  padding-left: 10px;
+  font-size: small;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sss video{
+  padding-left: 11px;
+  padding-right: 10px;
+}
+.concierto{
+  display: grid;
+  grid-template-columns: max-content;
+  grid-auto-flow: column;
+  padding: 20px;
+  justify-content: center;
+
+}
+.concierto p{
+  font-family:fantasy;
+  text-decoration:solid;
+
+}
+.concierto audio{
+  padding-left: 20px;
+}
+
+/**Imágenes Team*/
+.results {
+  position: relative; top: 5em;
+ max-width: 980px;
+ margin: 0 auto;
+ display: grid;
+ grid-gap: 20px;
+ grid-template-columns: repeat(auto-fill, 250px);
+ grid-auto-rows: minmax(18px, auto);
+ justify-content: center;	 
+ padding-bottom: 7rem;
+}
+
+.results > * {
+ width: 250px;
+ float: left;  
+ margin: 15px;
+ justify-content: center;	
+
+}
+
+.ht1 { grid-row-end: span 3; }
+.ht2 { grid-row-end: span 2; }
+.ht3 { grid-row-end: span 5; }
+
+@supports (display: grid) {
+ .results > * {
+   margin: 0 auto;
+   justify-content: center;	
+ }
+}
+
+.results > * {
+    background-color:bisque;
+    border-radius: 0.4cm;
+    
+}
+.results > * img {
+ max-width: 100%;
+ border-radius: 0.4cm;
+}
+.results > * span {
+ font-size: 140%;
+ font-family:monospace;
+}
+/**Imágenes Team FIN*/
+
+
+/**PÁGINA MENÚ*/
+#contentmenu{
+  justify-content: center;
+}
+.Formulario{
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: auto;
+  justify-content: center;
+
+}
+.menu-negocio figure{
+  border-radius: 1cm;
+}
+
+
+
+/**GALL*/
+table{
+  margin: auto;
+  width: 1200px;
+  text-align: center;
+  background: white;
+  border: 1px solid silver;
+  padding-bottom: 20px;
+}
+tr:nth-child(2n+1) {
+  background-color:#187E35;
+  color:#F4B301
+  }
+.Table{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+
+.item{
+   width: 350px;
+   height: 380px;
+   border-left: 100px;
+}
+.item img{
+  border-radius: 0.4cm;
+}
+.item h3{
+  font-family:cursive;
+}
+.mediagaleria{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: auto;
+  
+}
+
+/**Poster*/
+.post{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: auto;
+}
+.post img{
+  border-radius: 0.4cm;
+  padding-bottom: 10px;
+}
+
+
+/** Para pie de página */
+#footer {
+    clear: both;
+    border-top: 1px solid #187E35;
+    font-size: small;
+    color: white;
+    background-color: #187E35;
+    padding: 20px;
+  }
+  #footer figure{
+    position: relative; right: 0em;
+  }
+  #footer h5{
+    position:absolute; right: 3em;
+  }
+  /** Para pie de página */
