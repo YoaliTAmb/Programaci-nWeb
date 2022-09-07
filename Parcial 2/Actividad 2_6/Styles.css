@@ -1,0 +1,302 @@
+body{
+    background-color: white;
+    /*Para eliminar los espacios del layout en los navegadores**/
+    margin: 0%;
+    padding: 0%;
+
+}
+
+
+/*Diseño del encabezado**/
+header{
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: space-evenly;
+    background-color: #d8d4c9;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+header img{
+    background: url(Person.jpg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 25px;
+}
+
+/*Diseño de la fuente**/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+
+.headerInfo text {
+  fill: #35322a;
+  filter: url('#money');
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.headerInfo h1{
+    font-family: 'PT Serif Caption';
+    font-style: normal;
+    text-align: right;
+    padding-right: 6em;
+    position: relative; top: -2em;
+}
+
+.headerInfo{
+  align-items: center;
+  min-height: 40vh;
+  min-width: 600px;
+}
+/*FIN Diseño del encabezado**/
+
+/*Menú**/
+.navegación{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-evenly;
+    align-items: end;
+    margin-right: 2em;
+    float: left;    
+}
+
+.navegación ul li {
+    background-color:#846f5e;
+    border-radius: 20px;
+    
+}
+.navegación ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  .navegación ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:11px;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    font-family: times italic;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-align: center;
+  }
+  .navegación ul li {
+    position:relative;
+    
+    margin:10px;
+    padding:0;
+  }
+  ul li:hover {
+    background:#313131;
+  }
+/*Menú FIN**/
+
+.bod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin: 10px 0;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 1em;
+    background-color: #35322a;
+    color: #d8d4c9;
+    border-radius: 1em;
+}
+h2:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+/*Datos personales**/
+.DP{
+    justify-content: space-evenly;
+    padding-right: 1em;
+}
+
+.DP dt{
+    color: #b2886c;
+    font-weight:bold;
+    font-family: 'Courier New', Courier;
+    font-size:large;
+}
+.DP dd{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.botonb a{
+    text-decoration: none;
+    font-family:sans-serif;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    background-color: #35322a;
+    color: #d8d4c9;
+    border-radius: 1em;
+}
+
+.botonb a img{
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+.botonb a:hover{
+    background-color: #b2886c;
+    filter: blur(1px);
+}
+/*Datos personales FIN**/
+
+
+
+.demás{
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/*Formación Académica**/
+.FA ul a{
+    color: #b2886c;
+    font-style: underline;
+    font-weight:bold;
+    font-family: 'Courier New', Courier;
+    font-size:large;
+}
+.FA ul li p{
+    color: #77789d;
+    
+    font-weight:bold;
+    font-family: 'Courier New', Courier;
+    font-size:large;
+}
+.FA ul li{
+    list-style: none;
+}
+.FA ul li:hover{
+    background-color: #ccc4bd;
+}
+/*Formación Académica FIN**/
+
+/*EXPERIENCIA LABORAL**/
+.EL .trabajos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.grid{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+h3{
+    text-align:unset;
+    color: #b2886c;
+    font-weight:bold;
+    font-family: 'Courier New', Courier;
+    font-size:120%;
+}
+.item{
+    width: 400px;
+    height: 500px;
+    border-left: 100px;
+}
+.trabajos ol li{
+    color: #77789d;
+    font-weight:bold;
+    font-family: 'Courier New', Courier;
+    font-size:large;
+}
+.trabajos .item img{
+    border-radius: 1em;
+    margin: 1em;
+}
+.item img:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+/*EXPERIENCIA LABORAL FIN**/
+
+/*OTROS DATOS DE INTERÉS**/
+.OI data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+.OI data{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/*OTROS DATOS DE INTERÉS FIN**/
+
+/*FOOTER**/
+footer{
+    position: relative;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+footer img{
+    border-radius: 15px;
+}
+footer .Social,
+footer .men
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+footer .Social li,
+footer .men li
+{
+    list-style: none;
+}
+footer .Social li a {
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+footer .Social li a:hover{
+    transform: translateY(-10px);
+}
+footer .men li a {
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .men li a:hover{
+    opacity: 1;
+}
+footer p{
+    color: #d8d4c9;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+/*FOOTER FIN**/

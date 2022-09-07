@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <link rel = "stylesheet" type = "text/css" href = "Styles.css" />
+</head>
+<body>
+    <header nombre="header",  id="menus">
+        <section name="imagenPersona">
+            <selection class="Persona"><img src="Images/Person.jpg" width=200px height=250px/></selection> <!--Imagen de la persona-->
+        </section>
+        
+        <section class="headerInfo">
+            <svg width='500' height='200'>
+                <filter id='money'>
+                  <feMorphology in='SourceGraphic' operator='dilate' radius='2' result='expand'/>
+              
+                  <feOffset in='expand' dx='1' dy='1' result='shadow_1'/>
+                  <feOffset in='expand' dx='2' dy='2' result='shadow_2'/>
+                  <feOffset in='expand' dx='3' dy='3' result='shadow_3'/>
+                  <feOffset in='expand' dx='4' dy='4' result='shadow_4'/>
+                  <feOffset in='expand' dx='5' dy='5' result='shadow_5'/>
+                  <feOffset in='expand' dx='6' dy='6' result='shadow_6'/>
+                  <feOffset in='expand' dx='7' dy='7' result='shadow_7'/>
+              
+                  <feMerge result='shadow'>
+                    <feMergeNode in='expand'/>
+                    <feMergeNode in='shadow_1'/>
+                    <feMergeNode in='shadow_2'/>
+                    <feMergeNode in='shadow_3'/>
+                    <feMergeNode in='shadow_4'/>
+                    <feMergeNode in='shadow_5'/>
+                    <feMergeNode in='shadow_6'/>
+                    <feMergeNode in='shadow_7'/>
+                  </feMerge>
+              
+                  <feFlood flood-color='#ebe7e0'/>
+                  <feComposite in2='shadow' operator='in' result='shadow'/>
+              
+                  <feMorphology in='shadow' operator='dilate' radius='1' result='border'/>
+                  <feFlood flood-color='#35322a' result='border_color'/>
+                  <feComposite in2='border' operator='in' result='border'/>
+              
+                  <feOffset in='border' dx='1' dy='1' result='secondShadow_1'/>
+                  <feOffset in='border' dx='2' dy='2' result='secondShadow_2'/>
+                  <feOffset in='border' dx='3' dy='3' result='secondShadow_3'/>
+                  <feOffset in='border' dx='4' dy='4' result='secondShadow_4'/>
+                  <feOffset in='border' dx='5' dy='5' result='secondShadow_5'/>
+                  <feOffset in='border' dx='6' dy='6' result='secondShadow_6'/>
+                  <feOffset in='border' dx='7' dy='7' result='secondShadow_7'/>
+                  <feOffset in='border' dx='8' dy='8' result='secondShadow_8'/>
+                  <feOffset in='border' dx='9' dy='9' result='secondShadow_9'/>
+                  <feOffset in='border' dx='10' dy='10' result='secondShadow_10'/>
+                  <feOffset in='border' dx='11' dy='11' result='secondShadow_11'/>
+              
+                  <feMerge result='secondShadow'>
+                    <feMergeNode in='border'/>
+                    <feMergeNode in='secondShadow_1'/>
+                    <feMergeNode in='secondShadow_2'/>
+                    <feMergeNode in='secondShadow_3'/>
+                    <feMergeNode in='secondShadow_4'/>
+                    <feMergeNode in='secondShadow_5'/>
+                    <feMergeNode in='secondShadow_6'/>
+                    <feMergeNode in='secondShadow_7'/>
+                    <feMergeNode in='secondShadow_8'/>
+                    <feMergeNode in='secondShadow_9'/>
+                    <feMergeNode in='secondShadow_10'/>
+                    <feMergeNode in='secondShadow_11'/>
+                  </feMerge>
+              
+                  <feImage x='0' y='0' width='600' height='200' xlink:href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/stripes.svg'/>
+                  <feComposite in2='secondShadow' operator='in' result='secondShadow'/>
+              
+                  <feMerge>
+                    <feMergeNode in='secondShadow'/>
+                    <feMergeNode in='border'/>
+                    <feMergeNode in='shadow'/>
+                    <feMergeNode in='SourceGraphic'/>
+                  </feMerge>
+                </filter>
+              
+                <text dominant-baseline='middle' text-anchor='middle' x='50%' y='50%'>
+                  Yoali T. A.
+                </text>
+              </svg>
+
+              <h1>Ingeniera en Software</h1>
+        </section><!--Fin de sección de información-->         
+    </header>
+
+    <section class="bod">
+        <nav class="navegación"> 
+            <ul>
+                <li><a href="#DP">Datos personales</a></li>
+                <li><a href="#FA">Formación académica</a></li>
+                <li><a href="#EL">Experiencia laboral</a></li>
+                <li><a href="#OI">Otros datos de interés</a></li>
+                <li><a href="#R">Redes</a></li>
+            </ul>
+        </nav>
+
+        <section name="Apartados">
+            <section class="DP">
+                <h2 id="DP">Datos personales</h2>
+                <dl name="DPerson"> <!--Listas de definicón-->
+                    <dt> Nombre <!--Términos de elementos-->
+                        <dd> Yoali <!--Definiciones--> </dd>
+                    </dt>
+                    <dt>Apellidos
+                        <dd>Trejo Ambrosio</dd>
+                    </dt>
+                    <dt>Dirección
+                        <dd>Residencial Arboledas, Calle Ahuehuete #7.</dd>
+                    </dt>
+                    <dt>Teléfono
+                        <dd>7731547248</dd>
+                    </dt>
+                    <dt>Correo electrónico
+                        <dd>tr435761@uaeh.edu.mx</dd>
+                    </dt>
+                </dl>
+                <section align="right" class="botonb">
+                    <a href="#menus"><img src="Images/Back.png" width=30px height=30px/>  Ir al inicio</a>
+                </section>
+            </section><!--Fin DP-->
+
+        </section>
+
+    </section>
+
+    <section class="demás">
+
+
+        <section class="FA">
+            <h2 id="FA">Formación Académica</h2>
+            <section name="fora">
+                <ul>
+                    <a>Estudios</a>
+                    <ul>
+                        <li><p>Primaria</p>Narciso Mendoza</li>
+                        <li><p>Secundaria</p>Escuela Secundaria Técnica #52</li>
+                        <li><p>Superior</p>Universidad Autónoma del Estado de Hidalgo</li>
+                        <li>Licenciatura en Ingeniería de Software</li>
+                        <li>Sexto Semestre</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <a>Cursos realizados</a>
+                    <ul>
+                        <li><p>Inttelmex S.C.</p> Certificado de estudios en "Técnico en informática"</li>
+                        <li><p>Cisco</p> Certificado de estudios en "Introducción a Ciberseguridad"</li>
+                        <li><p>Microsoft</p> Certificado de participación en "Microsoft Cybersecurity Tabletop Exercise"</li>
+                        <li><p>Seguridad Cero</p> Certificado de participación en "Fundamentos de Ciberseguridad  "</li>
+                    </ul>                  
+                </ul>
+            </section>
+
+            <section align="right" class="botonb">
+                <a href="#menus"><img src="Images/Back.png" width=30px height=30px/>  Ir al inicio</a>
+            </section>
+        </section><!--Fin FA-->
+    
+        <section class="EL">
+            <h2 id="EL">Experiencia laboral</h2>
+            <section class="trabajos">
+                <section class = "grid">
+                    <section class="item">
+                        <a><img src="Images/POo.png" width=200 height=200/></a>
+                    <h3>Programación Orientada a Objetos</h3>
+                    <ol>
+                        <li>Período</li>
+                        <a>3 Años</a>
+                        <li>Nombre de la empresa</li>
+                        <a>UAEH</a>
+                        <li>Funciones realizadas</li>
+                        <a>Programación en Java y C++</a>
+                    </ol>                   
+                    </section>
+                    <section class="item">
+                        <a><img src="Images/moda.jpg" width=200 height=200/></a>
+                    <h3>Diseñadora de Modas</h3>
+                    <ol>
+                        <li>Período</li>
+                        <a>3 Años</a>
+                        <li>Nombre de la empresa</li>
+                        <a>Curso Escolar de nivel Secundaria</a>
+                        <li>Funciones realizadas</li>
+                        <a>Cuidado de niños en las casas particulares</a>
+                    </ol>                   
+                    </section>
+                    <section class="item">
+                        <a><img src="Images/DB.jpg" width=200 height=200/></a>
+                    <h3>Data Base</h3>
+                    <ol>
+                        <li>Período</li>
+                        <a>3 Años</a>
+                        <li>Nombre de la empresa</li>
+                        <a>UAEH</a>
+                        <li>Funciones realizadas</li>
+                        <a>Creación, Modelado, Normalización y Administración de bases de datos mediante el usode DBMS. 
+                            Auditorías de la base de datos mediante el uso de SQL Server y Workbench.</a>
+                    </ol>                   
+                    </section>
+                    <section class="item">
+                        <a><img src="Images/BS.jpg" width=200 height=200/></a>
+                    <h3>Niñera</h3>
+                    <ol>
+                        <li>Período</li>
+                        <a>9 Años</a>
+                        <li>Nombre de la empresa</li>
+                        <a>Sis4 & Friendmily</a>
+                        <li>Funciones realizadas</li>
+                        <a></a>
+                    </ol>                   
+                    </section>
+                    <section class="item">
+                        <a><img src="Images/web.png" width=200 height=130/></a>
+                    <h3>Diseñadora de Páginas Web</h3>
+                    <ol>
+                        <li>Período</li>
+                        <a>1/2 Año</a>
+                        <li>Nombre de la empresa</li>
+                        <a>Curso Escolar de nivel Superior UAEH</a>
+                        <li>Funciones realizadas</li>
+                        <a>Diseño de páginas web responsivas con HTML y HTML5, mediante el uso de Visual Studio Code</a>
+                    </ol>                   
+                    </section>
+                </section>
+                               
+            </section>
+            <section align="right" class="botonb">
+                <a href="#menus"><img src="Images/Back.png" width=30px height=30px/>  Ir al inicio</a>
+            </section>
+        </section><!--Fin EL-->
+
+        
+        <section class="OI">
+            <h2 id="OI">Otros datos de interés</h2>
+
+            <section name="data">
+                <h3>Disponibilidad de incorporación:</h3>
+                <p>Entre semana: Turnos matutinos, de 5:30 a.m. máximo a 11:00 a.m.</p>
+                <p>Fines de semana de 8:00 a.m. a 8 p.m.</p>
+                <h3>Idiomas</h3>
+                <p>Español</p>
+                <p>Inglés (Medio)</p>
+                <p>Coreano (Básico)</p>
+                <h3>Enlace a su blog personal, etc.</h3>
+                <p></p>
+            </section>
+
+            
+            <section align="right" class="botonb">
+                <a href="#menus"><img src="Images/Back.png" width=30px height=30px/>  Ir al inicio</a>
+            </section>
+        </section><!--Fin OI-->
+    </section>
+    
+
+
+    <footer name="Redes">
+        <ul class="Social">
+            <li><a href="https://www.facebook.com/yoali.trejo.1"target="_blank"><img src="Images/Face.png"/></a></li> <!--Face-->
+            <li><a href="https://www.instagram.com/you_trejo/"target="_blank"><img src="Images/Instagram.png"/></a></li><!--Insta-->
+            <li><a href="https://www.youtube.com/channel/UC80BCr7mH32ssWgIFJ1Io7g/featured"target="_blank"><img src="Images/Youtube.png"/></a></li><!--Youtube-->
+            <li><a href="https://github.com/YoaliTAmb?tab=repositories"target="_blank"><img src="Images/GitHub.png"/></a></li><!--GitHub-->
+        </ul>
+
+        <ul class="men">
+            <li><a href="#DP">Data Person</a></li>
+            <li><a href="#FA">Academic training</a></li>
+            <li><a href="#EL">Work experience</a></li>
+            <li><a href="#OI">Other Data</a></li>
+        </ul>
+
+        <p>©2022 Yoali T.Amb. | Derechos reservados</p>
+    </footer>
+</body>
+</html>
