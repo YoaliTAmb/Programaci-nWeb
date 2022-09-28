@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expresiones y declaraciones</title>
+
+</head>
+<body>
+    <script>
+       /*Condicionales if, else if, if*/
+        /*Estructuras conicionales*/
+        var semaforo = "amarillo"
+        if(semaforo === "verde")
+        alert ("El semaforo está en verde");
+        else if(semaforo === "rojo")
+        alert ("El semaforo está en rojo");
+        else if(semaforo === "amarillo")
+        alert ("El semaforo está en amarillo");
+        else
+        alert ("El semaforo está apagado");
+
+        var edad = Number (prompt("Digite su edad: "));
+        if(edad>=18)
+            alert("Tu eres mayor de edad");
+        else
+            alert("Tu eres menor de edad");
+
+        
+        /*CICLOS*/
+        //For
+            for(var num = 0; num <= 100; num = num + 2)
+                console.log(num);
+
+        //While
+            var numn = 0; //Variable inicial para el ciclo
+            //Imprime los numeros pares del 0 al 100
+            while(numn <= 100){
+                console.log(numn);
+                numn = numn + 2;
+            }
+
+        //Do/while
+            var pago = 0;
+            var totalPago = 0;
+            do{
+                pago = Number (prompt("Monto del pago: "));
+                totalPago = totalPago + pago;
+            } while(pago);
+            alert("Tu pago fue de: " + totalPago);
+       
+       
+       
+       /*Funciones*/
+        function boton1 (){
+            alert("Ejemplo de una función")
+        }
+    </script>
+    <input type="button" value="Presiona" onclick="boton1 ()"/>
+</br>
+</br>
+
+    <script>
+        /*Funciones parámetros*/
+        function nombres (nombre, apellido){
+            document.write ("Yo soy " + nombre + apellido + "</br>");
+        }
+
+        nombres("Lee", "Haechan");
+        nombres("Hoshi", " ");
+        nombres("Jung", "Jaehyun");
+    </script>
+</body>
+</html>
